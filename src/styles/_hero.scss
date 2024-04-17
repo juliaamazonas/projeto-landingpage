@@ -1,0 +1,74 @@
+@use 'variaveis';
+
+
+*{
+    max-width: 1366px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero{
+
+    background-color: variaveis.$corPrincipal;
+    padding-top: 105px;
+    
+
+    &__content {
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            height: 35vh;
+        }
+
+        @media screen and (max-width: 767px) {
+            height: 35vh;
+        }
+
+        &__text {
+            display: block;
+            width: 100vw;
+            text-align: center;
+            margin-top: 80px;
+            height: 80vh;
+
+            @media screen and (min-width: 768px) and (max-width: 1023px) {
+                margin-top: 150px;
+            }
+
+            
+
+            h1 {
+                color: #fff;
+                font-size: 60px;
+                font-weight: 400;
+                margin-top: 0;
+
+                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                    font-size: 40px;
+                }
+
+                @media screen and (max-width: 767px) {
+                    font-size: 28px;
+                }
+
+            }
+
+            &--font-futura {
+                font-family: 'Futura', sans-serif;
+                letter-spacing: -2px;
+                color: #fff;
+            }
+    
+            h2 {
+                color: #fff;
+                font-size: 40px;
+
+                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                    font-size: 24px;
+                }
+
+                @media screen and (max-width: 767px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

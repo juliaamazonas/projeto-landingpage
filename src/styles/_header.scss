@@ -1,0 +1,178 @@
+@use 'variaveis';
+
+.header {
+    display: flex;
+    background-color: rgba($color: variaveis.$corBgDoHeader, $alpha: 0.7);
+    width: 100%;
+    height: 104px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        width: 100vw;
+    }
+
+
+    &__logo {
+        width: 105px;
+        padding: 10px 20px;
+
+        @media screen and (max-width: 767px) {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+
+    .show-menu {
+        display: none;
+
+        ul {
+
+            display: none;
+        }
+    }
+
+    .show-menu-active {
+        
+        width: 150px;
+        display: flex;
+
+        ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+
+        li {
+            margin-top:50px
+        }
+
+        a {
+            font-size: 8px;
+            color: #fff;
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    .hamburguer-menu {
+        display: none;
+        cursor: pointer;
+        position: fixed;
+        left: 340px;
+        top: 5px;
+
+        @media screen and (max-width: 767px) {
+            display: block;
+            cursor: pointer;
+            position: fixed;
+            left: 340px;
+            top: 5px;
+        }
+    }
+
+    .hamburguer-bar {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+    }
+
+    &__list {
+        display: flex;
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            padding-left: 0px;
+        }
+
+        @media screen and (max-width: 767px) { 
+            display: none;
+        }
+
+        &__item {
+            padding: 16px 20px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 24px;
+            list-style: none;
+            
+            @media screen and (min-width: 768px) and (max-width: 1023px) {
+                font-size: 20px;
+                padding: 20px 10px;
+            }
+            
+
+            &:hover {
+                border-bottom:1px solid #fff;
+            }
+
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+
+    &__icons {
+            padding-right: 40px;
+            margin-left:280px;
+
+            @media screen and (min-width: 768px) and (max-width: 1023px) {
+                margin-left: 30px;
+                padding-right: 0px;
+            }
+
+            @media screen and (max-width: 767px) {
+                position: fixed;
+                top: -15px;
+                left: 240px;
+                margin: 0;
+                padding: 0;
+            }
+
+            &__itens {
+                display: flex;
+                justify-content: flex-end;
+    
+                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                    margin-left: 0px;
+                    padding-left: 0px;
+                }
+                    
+                &__item {
+                    padding: 16px 8px;
+                    text-align: end;
+                    list-style: none;
+    
+                    @media screen and (min-width: 768px) and (max-width: 1023px) {
+                        padding: 20px 10px;
+                    }
+    
+                    @media screen and (max-width: 767px) {
+                        padding: 10px 4px;
+                    }
+                    
+                    .material-symbols-outlined {
+                        color: #fff;
+                        font-size: 27px;
+
+                        @media screen and (max-width: 767px) {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+

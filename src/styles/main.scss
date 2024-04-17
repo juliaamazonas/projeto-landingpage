@@ -1,4 +1,31 @@
+@use 'artigos';
+@use 'footer';
+@use 'header';
+@use 'hero';
+@use 'shop';
+@use 'sobre';
+@use 'variaveis';
+
+
+@font-face {
+    font-family: 'Futura';
+    src: url('../../assets/fonts/futura/futur.ttf') format('ttf'),
+}
+
+
+*{
+    max-width: 1366px;
+    font-family: "Montserrat", 'sans-serif';
+    color: variaveis.$corPrincipal;
+}
+
 body {
-    background-color: #080808;
-    color: azure;
+    background-color: #fff;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+main {
+    padding-right: 20px;
+    padding-left: 20px;
 }

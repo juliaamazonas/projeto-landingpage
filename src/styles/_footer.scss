@@ -1,0 +1,125 @@
+.footer {
+
+    &__container {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            height: 50vh;
+        }
+
+        @media screen and (max-width: 767px) {
+            height: 50vh;
+            justify-content: start;
+        }
+
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(3, 50%);
+
+            @media screen and (min-width: 768px) and (max-width: 1023px) {
+                
+                margin-right: 200px;
+            }
+
+            @media screen and (max-width: 767px) {
+                display: block;
+            }
+            
+            
+            &__menu {
+                display: block;
+                h3 {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+    
+                nav {
+    
+                    display: flex;
+                    flex-direction: column;
+    
+                    a {
+                        font-size: 14px;
+                        text-decoration: none;
+                        padding: 5px;
+                    }
+                }
+            }
+            &__contato{
+
+                display: block;
+                
+    
+                h3 {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+    
+                nav {
+                        
+                    a {
+                        &:nth-child(2) {
+                            img {
+                                width: 50px;
+                                padding: 0;
+                            }
+                            
+                        }
+
+                        img {
+                            width: 30px;
+                            padding: 8px;
+    
+                            
+                        }
+                    } 
+
+                    
+
+                }
+            }
+    
+            &__pagamento{
+
+                text-align: center;
+    
+                h3 {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+    
+                div {
+                    
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        width: 30px;
+                        padding: 8px;
+    
+                        &:last-child{
+                            width: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+    
+
+    &__rodape {
+
+        text-align: center;
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+}

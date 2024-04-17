@@ -1,0 +1,88 @@
+@use 'variaveis';
+
+.artigos {
+
+    background-color: #fff;
+    margin-top: 100px;
+        
+    &__list {
+
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        gap: 20px;
+        list-style: none;
+        justify-content: center;
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+            display: grid;
+            grid-template-columns: repeat(3, 30%);
+            gap: 20px;
+            padding: 0;
+            
+        }
+
+        @media screen and (max-width: 768px) {
+
+            display: block;
+            padding: 0;
+
+        }
+
+        &__item {
+
+            div {
+
+                width: 400px;
+                height: 327px;
+
+                img {
+                    width: 80%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 15px;
+
+                    @media screen and (min-width: 768px) and (max-width: 1023px) {
+                        width: 30vw;
+                    }
+
+                }
+    
+            }
+
+            
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+                text-align: justify
+            }
+
+            a {
+                text-decoration: none;
+                background-color: transparent;
+                color: variaveis.$corPrincipal;
+                border: 1px solid variaveis.$corPrincipal;
+                width: 100px;
+                height: 40px;
+                font-size: 14px;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    background-color: rgba($color: variaveis.$corBgDoHeader, $alpha: 0.7);
+                    color: variaveis.$corSecundaria;
+                }
+
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 5px;
+                }
+            }
+
+        }
+    }
+}
