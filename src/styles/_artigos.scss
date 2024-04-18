@@ -22,10 +22,11 @@
             
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
 
             display: block;
             padding: 0;
+            
 
         }
 
@@ -36,8 +37,14 @@
                 width: 400px;
                 height: 327px;
 
+                @media screen and (max-width: 767px) {
+                    width: 115vw;
+                }
+
+
+
                 img {
-                    width: 80%;
+                    width: 70%;
                     height: 100%;
                     object-fit: cover;
                     border-radius: 15px;
@@ -46,6 +53,13 @@
                         width: 30vw;
                     }
 
+                    @media screen and (max-width: 767px) {
+                        width: 80%;
+                        object-fit: cover;
+                        object-position: 20% 15%;
+                    }
+    
+
                 }
     
             }
@@ -53,6 +67,10 @@
             
             h3 {
                 font-size: 20px;
+
+                @media screen and (max-width: 767px) {
+                    text-align: left;
+                }
             }
 
             p {
@@ -78,7 +96,7 @@
                     color: variaveis.$corSecundaria;
                 }
 
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 767px) {
                     margin-bottom: 5px;
                 }
             }

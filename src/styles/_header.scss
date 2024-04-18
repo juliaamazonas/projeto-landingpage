@@ -65,17 +65,13 @@
 
     .hamburguer-menu {
         display: none;
-        cursor: pointer;
-        position: fixed;
-        left: 340px;
-        top: 5px;
-
+        
         @media screen and (max-width: 767px) {
             display: block;
             cursor: pointer;
             position: fixed;
-            left: 340px;
-            top: 5px;
+            right: 20px;
+            top: 20px;
         }
     }
 
@@ -131,8 +127,8 @@
 
             @media screen and (max-width: 767px) {
                 position: fixed;
-                top: -15px;
-                left: 240px;
+                right: 60px;
+                top: 5px;
                 margin: 0;
                 padding: 0;
             }

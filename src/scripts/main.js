@@ -7,11 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         menu.classList.toggle('show-menu-active');
     });
 
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 767) {
-            menu.classList.remove('show-menu');
-        }
-    });
+    
 
 
     for (let i = 0; i < buttons.length; i++) {
